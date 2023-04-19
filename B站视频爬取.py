@@ -14,7 +14,7 @@ headers = {
 response = requests.get(url=url, headers=headers)
 # print(response.text)
 # 标题
-title = re.findall('<h1 title="(.*?)" class="video-title tit">“小狗虽然笨，但是它们可爱呀！！”</h1>', response.text)[0]
+title = re.findall('<h1 title="(.*?)" class="video-title tit">.*?</h1>', response.text)[0]
 # url所在的位置
 data_text = re.findall('<script>window.__playinfo__=(.*?)</script>', response.text)[0]
 print(title)
