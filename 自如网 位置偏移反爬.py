@@ -39,8 +39,15 @@ class ZiRoom():
         html = etree.HTML(html_str)
         div_list = html.xpath('//div[@class="Z_list-box"]/div[@class="item"]')
         for div in div_list:
-            title = div.xpath('.//h5/a/text()')
-            # print(title)
+            try:
+                title = div.xpath('.//h5/a/text()')[0]
+                if title:  # 判断标题是否存在
+                    title = title
+                else:
+                    title = ''
+            except IndexError:
+                title = ''
+
             # 获取偏移量
             span_list = div.xpath('.//span[@class="num"]')
             price = ''
