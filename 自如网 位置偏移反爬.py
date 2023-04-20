@@ -1,7 +1,5 @@
 # encoding:utf-8
-# @Time: 2022/7/30 23:07
-# @Author: Alan
-# @boys: 加油！！！奥利给！！！
+
 import re
 import requests
 from urllib import request
