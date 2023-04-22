@@ -1,7 +1,5 @@
 # encoding:utf-8
-# @Time":"2022/7/15 14:07
-# @Author":"Alan",
-# @boys":"加油！！！奥利给！！！
+
 import requests
 import execjs
 
