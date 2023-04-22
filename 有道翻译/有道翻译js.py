@@ -11,9 +11,9 @@ headers = {
     'Referer': 'https://fanyi.youdao.com/',
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36',
 }
-word = input('请输入翻译的内容:')
+word = input('翻译的内容:')
 
-with open('有道.js', 'r', encoding='utf-8') as f:
+with open('有道翻译.js', 'r', encoding='utf-8') as f:
     js_code = f.read()
 
 # 编译js代码
