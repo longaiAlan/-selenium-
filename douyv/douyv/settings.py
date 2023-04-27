@@ -13,7 +13,7 @@ SPIDER_MODULES = ['douyv.spiders']
 NEWSPIDER_MODULE = 'douyv.spiders'
 
 # 设置图片保存路径
-IMAGES_STORE = 'E:/爬虫-scrapy框架/第24节课/douyv/image'
+IMAGES_STORE = 'E:/爬虫-scrapy框架/douyv/image'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 # USER_AGENT = 'douyv (+http://www.yourdomain.com)'
